@@ -1,0 +1,313 @@
+.header {
+	margin-bottom: -120px;
+	background: transparent;
+	.container {
+		background: transparent;
+	}
+}
+
+.about-us {
+	margin-bottom: 130px;
+	display: flex;
+	align-items: center;
+	.image-block {
+		flex: 1 1 auto;
+		width: 20%;
+		position: relative;
+		z-index: 1;
+		.image {
+			width: 476px;
+			height: 275px;
+			background: url(../../images/about-us.jpg) center center;
+			background-size: contain;
+			border-radius: 8px;
+			overflow: hidden;
+			.pane {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: rgba(21, 195, 148, 0.56);
+				.logo {
+					display: inline-block;
+					font-size: 29px;
+					font-weight: bold;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 1.21;
+					letter-spacing: normal;
+					text-align: left;
+					color: #ffffff;
+					padding: 0 0 0 73px;
+					margin: 0;
+					width: auto;
+					position: relative;
+					&::before {
+						content: "";
+						position: absolute;
+						background: url(../../images/about-us_logo.png) center center;
+						width: 55px;
+						height: 55px;
+						left: 0;
+						top: -18px;
+					}
+				}
+			}
+		}
+	}
+	.container {
+		width: 80%;
+		/*width: 920px;*/
+		height: 423px;
+		border-radius: 8px;
+		background-color: #3a4248;
+		padding: 75px 75px 75px 320px;
+		position: relative;
+		box-sizing: border-box;
+		color: #FFF;
+		.title {
+			font-weight: bold;
+			font-size: 24px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1;
+			letter-spacing: normal;
+			margin: 0 0 26px;
+		}
+		.text {
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 300;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.25;
+			letter-spacing: normal;
+			p {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+.rent-housing {
+	margin-bottom: 40px;
+	.title {
+		margin: 0 auto;
+		font-size: 24px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: center;
+		color: #3a4248;
+	}
+	.suggest-list {
+		height: 95px;
+		margin-top: 80px;
+		margin-bottom: 80px;
+		display: flex;
+		justify-content: stretch;
+		border: 1px solid rgba(58, 66, 72, 0.15);
+		.capability {
+			width: calc(100% / 3);
+			border: 1px solid rgba(58, 66, 72, 0.15);
+			position: relative;
+			margin: -1px -1px;
+			background-repeat: no-repeat;
+			background-position: 30px center;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 300;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.5;
+			letter-spacing: normal;
+			text-align: left;
+			color: #3a4248;
+			display: flex;
+			align-items: center;
+			&.found {
+				background-image: url(../../images/housing_found.png);
+			}
+			&.penitentiary {
+				background-image: url(../../images/housing_penitentiary.png);
+			}
+			&.payment {
+				background-image: url(../../images/housing_payment.png);
+			}
+			+ .capability {
+				margin-left: 0;
+			}
+			.text {
+				padding-left: 100px;
+				font-family: Roboto;
+
+				font-size: 16px;
+			
+				font-stretch: normal;
+			
+				font-style: normal;
+			
+				line-height: 1.5;
+			
+				letter-spacing: normal;
+			
+				text-align: left;
+			
+				color: #3a4248;
+			}
+			.hover-text {
+				position: absolute;
+				padding: 30px;
+				bottom: 100%;
+				left: 0;
+				right: 0;
+				display: none;
+				font-family: Roboto;
+
+				font-size: 16px;
+			
+				font-weight: 300;
+			
+				font-stretch: normal;
+			
+				font-style: normal;
+			
+				line-height: 1.25;
+			
+				letter-spacing: normal;
+			
+				text-align: left;
+			
+				color: #ffffff;
+			}
+			&:hover {
+				border-bottom: none;
+				border-top: none;
+				margin-top: -2px;
+				margin-bottom: -2px;
+				background-color: #FFF;
+				box-shadow: 3px 5px 50px 0 rgba(0, 0, 0, 0.16);
+				.hover-text {
+					position: absolute;
+					padding: 30px;
+					bottom: 100%;
+					left: 0;
+					right: 0;
+					display: block;
+					background-color: #3a4248;
+					z-index: 10000;
+				}
+			}
+		}
+	}
+}
+.rent-housing .suggest-list .capability {
+	
+	/*max-width: 360px;*/
+	/*width: 360px;
+	height: 360px;
+	background: #FFFFFF;
+	box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: center 40px;
+	padding: 280px 20px 0;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 20px;
+	/* or 111% */
+	/*text-align: center;
+	letter-spacing: 0.02em;
+	color: #000000;
+	opacity: 0.75;*/
+}
+
+.rent-housing .find-options {
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	text-align: center;
+}
+
+.airport-form .content,
+.delivery-form .content {
+	width: 966px;
+}
+.delivery-form .left h2 {
+	line-height: 60px;
+}
+.popup-form {
+	.content {
+		padding: 55px 75px;
+	}
+	.dual-form {
+		display: flex;
+		position: relative;
+		.left {
+			padding-right: 75px;
+		}
+		.right {
+			padding-left: 75px;
+		}
+		.left,
+		.right {
+			box-sizing: border-box;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			h2 {
+				height: 60px;
+				margin: 0 0 35px;
+				flex: 0 0 60px;
+			}
+			p {
+				font-weight: bold;
+				color: #3a4248;
+				margin: 0 0 18px;
+			}
+			ul {
+				padding: 0;
+				height: 100%;
+				li {
+					margin: 0 0 18px;
+					&::marker {
+						color: #15c394;
+					}
+				}
+			}
+		}
+		.divide {
+			position: absolute;
+			left: 50%;
+			width: 30px;
+			top: -55px;
+			bottom: -55px;
+			text-align: center;
+			margin-left: -15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			.line {
+				background: #3a4248;
+				width: 2px;
+				height: 50%;
+				opacity: 0.2;
+			}
+			.text {
+				height: 40px;
+				font-size: 16px;
+				font-weight: bold;
+				font-stretch: normal;
+				line-height: 40px;
+				letter-spacing: normal;
+				color: #3a4248;
+			}
+		}
+	}
+}

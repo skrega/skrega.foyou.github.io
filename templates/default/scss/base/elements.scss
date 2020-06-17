@@ -1,0 +1,134 @@
+@import 'global-variables.scss';
+
+.button {
+	font-family: Montserrat;
+	background: $button-background;
+	border-radius: 8px;
+	display: inline-block;
+	border: 0;
+	font-style: normal;
+	letter-spacing: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: $button-color;
+	padding: 18px 45px 17px;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	&.fluid {
+		width: 100%;
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+}
+a.button {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+input.input {
+	border: 1px solid rgba(58,66,72,.25);
+	box-sizing: border-box;
+	line-height: 2.75em;
+	line-height: 45px;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 1em;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	box-shadow: 5px 5px 50px 0 rgba(58, 66, 72, 0.05);
+	&:focus, &:active {
+		border: 1px solid #15c394;
+	}
+}
+.input {
+	display: inline-block;
+	font-family: Roboto;
+}
+.input input {
+	border: 1px solid #15c394;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 0 20px;
+	font-size: 1em;
+	line-height: 2.75em;
+
+	color: rgba(0, 0, 0, 0.5);
+	font-family: Roboto;
+}
+.input label {
+	display: inline-block;
+}
+.input label + input {
+	margin-left: 27px;
+}
+.input + .error {
+    display: inline-block;
+    color: #F00;
+}
+
+
+textarea.text {
+	border: 1px solid rgba(58,66,72,.25);
+	box-sizing: border-box;
+	border-radius: 8px;
+	background: #FFF;
+	font-family: Roboto;
+	padding: 20px;
+	font-size: 1rem;
+	font-size: inherit;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #3a4248;
+	box-shadow: 5px 5px 50px 0 rgba(58, 66, 72, 0.05);
+	&:focus {
+		border: 1px solid #15c394;
+	}
+}
+
+
+.radio {
+	display: inline-block;
+	cursor: pointer;
+}
+.radio > input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.radio > label {
+	position: relative;
+	height: 2.75em;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	text-align: center;
+}
+.radio > label {
+	display: block;
+	border: 1px solid rgba(58,66,72,.25);
+	box-shadow: 5px 5px 50px 0 rgba(58, 66, 72, 0.05);
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 0 23px;
+	font-size: 1em;
+	line-height: 2.75em;
+	min-width: 4em;
+	transition: color 0.2s ease-out 0.1s;
+	transition: background 0.2s ease-out 0.1s;
+	background: #FFF;
+	color: #15c394;
+	color: rgba(58,66,72,.25);
+	&:focus {
+		border: 1px solid #15c394;
+	}
+}
+.radio > input:checked + label {
+	background: #15c394;
+	color: #FFF;
+}

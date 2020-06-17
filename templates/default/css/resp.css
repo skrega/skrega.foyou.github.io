@@ -1,0 +1,295 @@
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+@media all and (max-width: 1440px) {
+	html {
+		font-size: 18px;
+		line-height: 1.25rem;
+	}
+/*
+	.button {
+		height: 50px;
+		font-size: 14px;
+		line-height: 50px;
+		padding: 0 40px;
+	}*/
+
+	.layout-container {
+		max-width: 1140px;
+	}
+	.top-container {
+    margin-top: 157px;
+    padding-left: 0;
+	}
+	.above {
+    height: 700px;
+	}
+	.below {
+    height: 390px;
+	}
+	.place {
+		max-width: 320px;
+		width: auto;
+	}
+	.place .price {
+		/*height: 34px;*/
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.place .title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.rent-housing .capability {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	/*.text-block .title {
+		font-size: 36px;
+		line-height: 45px;
+	}
+	.text-block {
+		padding: 0 20px 0 570px;
+	}*/
+	
+	.logo {
+		font-size: 15px;
+		line-height: 40px;
+		height: 40px;
+		width: 100px;
+		padding-left: 45px;
+		margin-right: 70px;
+	}
+	.logo::before {
+		width: 32px;
+		height: 45px;
+		background-size: contain;
+	}
+	.menu {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.landlords-form .above {
+		height: 620px;
+	}
+	.landlords-form .top-container {
+		margin-top: 50px;
+		font-size: 18px;
+		line-height: 29px;
+	}
+	.landlords-form .top-container .title {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 35px;
+
+	}
+}
+
+@media all and (max-width: 1180px) {
+	.container {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: calc(100% - 40px);
+	}
+	.text-block {
+		padding: 0 20px 0 50vw;
+	}
+	.text-block .text {
+    font-size: 14px;
+    line-height: 22px;
+	}
+	.logo {
+		margin-right: 5%;
+	}
+	.menu .link {
+    margin-right: 10%;
+	}
+	.post-announce {
+		margin-left: 4%;
+	}
+	.header {
+		padding: 0 20px 0 40px;
+	}
+	 
+	.form-row.row-available.as-line {
+			display: block;
+	}
+	.form-row {
+		margin: 28px 0;
+	}
+	.form-row .column .element {
+		margin: 0 0 10px 0;
+	}
+	.landlords-form .form-row.line {
+		margin: 50px 0;
+	}
+	.popup-form .content {
+		width: 535px;
+	}
+}
+
+
+@media all and (max-width: 768px) {
+	html {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.place-list {
+    margin-top: 0;
+    display: block;
+	}
+	.place, .place + .place {
+		margin: 50px auto;
+	}
+	.below {
+    height: auto;
+	}
+	.above {
+		height: 568px;
+	}
+	.above .shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(92.11deg, rgba(0, 0, 0, 0.5) 5.61%, rgba(0, 0, 0, 0.15) 65.35%);
+	}
+	.top-container {
+		margin-top: 120px;
+		padding-left: 0;
+		position: relative;
+	}
+	.top-container .read-more {
+		display: block;
+		font-size: 18px;
+		line-height: 21px;
+		margin-top: 30px;
+	}
+	.about-us {
+		padding: 0;
+		position: relative;
+		display: block;
+	}
+	.about-us .container {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.about-us .image-block {
+		position: relative;
+		width: 100%;
+	}
+	.about-us .image-block .pane {
+			width: 100%;
+			padding: 0 0 0 0;
+			border-radius: 0;
+	}
+	.about-us .image-block .pane .image {
+		top: 0;
+		background-position: center top;
+		border-radius: 0;
+		opacity: 0.2;
+	}
+	.about-us .text-block {
+		position: absolute;
+		left:0;
+		top: 0;
+		width: 100%;
+		padding: 40px 20px 0;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	.about-us .text-block .title {
+    margin: 0 0 15px;
+    font-size: 24px;
+    line-height: 30px;
+	}
+	.text-block .line {
+		width: 70%;
+		margin: 20px auto;
+	}
+	.rent-housing .title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.rent-housing .suggest-list {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		display: block;
+	}
+	.rent-housing .capability {
+		margin: 0 auto 10px;
+	}
+	.rent-housing .suggest-list .capability + .capability {
+		margin: 0 auto 10px;
+	}
+
+	.popup-form {
+		/*top: 70px;*/
+	}
+	.popup-form .content {
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+		box-sizing: border-box;
+		padding: 50px 20px;
+		position: relative;
+		min-height: 100%;
+	}
+	.popup-form .close {
+		right: 20px;
+		top: 20px;
+		width: 25px;
+		height: 25px;
+		background-size: contain;
+	}
+	.renter-form .title {
+		font-size: 24px;
+		line-height: 29px;
+		margin: 0 0 15px 0;
+	}
+	.landlords-form .above {
+		height: 590px;
+	}
+}
+
+
+@media all and (max-width: 700px) {
+	.header .pane {
+		display: none;
+	}
+	.header {
+		padding-right: 20px;
+		background: #3a4248;
+	}
+	.mobile-toggle {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.intro {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	
+	.rent-housing .title {
+		margin: 0 30px;
+	}
+	.renter-form .form-row.as-line {
+		display: block;
+	}
+}
+
+/* font-size: 24px;
+line-height: 30px; */

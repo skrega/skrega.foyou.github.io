@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Room - ForYouToo</title>
+    <base href="" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1,700&family=Montserrat:wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95de56c5a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/templates/default/libs/lightslider-master/lightslider.css">
+    <link rel="stylesheet" href="/templates/default/minify/base.css" type="text/css" />
+    <link rel="stylesheet" href="/templates/default/css/style.css">
+    <link rel="stylesheet" href="/templates/default/css/resp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/templates/default/js/scripts.js"></script>
+    <script src="/templates/default/libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="/templates/default/libs/lightslider-master/lightslider.js"></script>
+    <script src="/templates/default/components/dropzone-5.7.0/dropzone.js"></script>
+    <link rel="stylesheet" href="/templates/default/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/templates/default/components/dropzone-5.7.0/basic.css">
+    <link rel="stylesheet" href="/templates/default/components/dropzone-5.7.0/dropzone.css">
+    <link rel="stylesheet" href="/templates/default/minify/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/templates/default/minify/form.css" type="text/css" />
+    <link rel="stylesheet" href="/templates/default/minify/page.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="page-container">
+            <a class="logo" href="/">ForYouToo</a>
+            <div class="pane">
+                <nav class="menu">
+                    <a class="link">Best offers</a>
+                    <a class="link">About us</a>
+                </nav>
+                <!--a class="phone" href="tel:+18887415949">+18887415949</a-->
+                <a class="button post-announce" href="post-ad.html">Post Ad</a>
+            </div>
+            <div class="mobile-toggle" onclick="toggleMobile(event);"></div>
+        </div>
+    </header>
+    <div class="mobile-pane">
+        <nav class="menu">
+            <a class="link">Best offers</a>
+            <a class="link">About us</a>
+        </nav>
+        <a class="phone" href="tel:+18887415949">+18887415949</a>
+        <a class="button post-announce" href="post-ad.html">Post Ad</a>
+    </div>
+    <main class="layout-container layout-padding">
+        <div class="breadcrumbs">
+            <a href="#">Previous</a>
+        </div>
+        <h2 class="title">Комната в Скарбро</h2>
+        <p class="city">Торонто</p>
+    </main>
+    <section class="room">
+        <div class="layout-container">
+           <div class="room-inner">
+                <div class="slider">
+                    <ul id="light-slider" class="slider-item">
+                        <li class="slider-items" data-thumb="default/images/slider-item.png">
+                            <a href="default/images/slider-item.png" data-fancybox="gallery">
+                                <img src="default/images/slider-item.png" alt="">
+                            </a>
+                        </li>
+                        <li class="slider-items" data-thumb="default/images/slider-item.png">
+                            <a href="default/images/slider-item.png" data-fancybox="gallery">
+                                <img src="default/images/slider-item.png" alt="">
+                            </a>
+                        </li>
+                        <li class="slider-items" data-thumb="default/images/slider-item.png">
+                            <a href="default/images/slider-item.png" data-fancybox="gallery">
+                                <img src="default/images/slider-item.png" alt="">
+                            </a>
+                        </li>
+                        <li class="slider-items" data-thumb="default/images/slider-item.png">
+                            <a href="default/images/slider-item.png" data-fancybox="gallery">
+                                <img src="default/images/slider-item.png" alt="">
+                            </a>
+                        </li>
+                        <li class="slider-items" data-thumb="default/images/slider-item.png">
+                            <a href="default/images/slider-item.png" data-fancybox="gallery">
+                                <img src="default/images/slider-item.png" alt="">
+                            </a>
+                        </li>
+                        <li class="slider-items" data-thumb="default/images/slider-item.png">
+                            <a href="default/images/slider-item.png" data-fancybox="gallery">
+                                <img src="default/images/slider-item.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="aside">
+                    <div class="top">
+                        <div class="top-row">
+                            Price<span class="price">800 cad</span>
+                        </div>
+                        <div class="top-row">
+                            Landlord <span>Stan Smith</span>
+                        </div>
+                    </div>
+                    <dl class="form-row">
+                        <dd class="desc">
+                            <div class="element checkbox checkbox-check">
+                                <input id="checkbox-housing" type="checkbox">
+                                <label class="forgot-password" for="checkbox-housing">Housing available soon</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="row-btn">
+                        <button class="button-black">Show number</button>
+                        <button class="button">To write</button>
+                    </div>
+                </div>
+           </div>
+           <div class="information">
+                <div class="map">
+                    <div class="container">
+                        <a class="address" href="#">Торонто, Скарбро, ул. Первая, 99</a>
+                        <div class="map-iframe">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92206.76823839129!2d-79.29877438764366!3d43.7632779654633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d05e9e66b609%3A0xf06e63ce2447807b!2z0KHQutCw0YDQsdC-0YDQviwg0KLQvtGA0L7QvdGC0L4sINCe0L3RgtCw0YDQuNC-LCDQmtCw0L3QsNC00LA!5e0!3m2!1sru!2sru!4v1590833114186!5m2!1sru!2sru" width="100%" height="238" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="amenties">
+                    <div class="container">
+                        <h2 class="form-title">Amenties</h2>
+                        <div class="columns">
+                            <div class="colomn">
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="furniture" type="checkbox">
+                                            <label class="forgot-password" for="furniture">Furniture</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="elevator" type="checkbox">
+                                            <label class="forgot-password" for="elevator">Elevator</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="colomn">
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="conditioner" type="checkbox">
+                                            <label class="forgot-password" for="conditioner">Conditioner</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="gym" type="checkbox">
+                                            <label class="forgot-password" for="gym">Gym</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="colomn">
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="wifi" type="checkbox">
+                                            <label class="forgot-password" for="wifi">Wi-Fi</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="parking" type="checkbox">
+                                            <label class="forgot-password" for="parking">Parking</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="colomn">
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="laundry" type="checkbox">
+                                            <label class="forgot-password" for="laundry">Laundry</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="dishwasher" type="checkbox">
+                                            <label class="forgot-password" for="dishwasher">Dishwasher</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="colomn">
+                                <dl class="form-row">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="private" type="checkbox">
+                                            <label class="forgot-password" for="private">Private Closet</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="form-row form-length">
+                                    <dd class="desc">
+                                        <div class="element checkbox checkbox-check">
+                                            <input id="cleaning" type="checkbox">
+                                            <label class="forgot-password" for="cleaning">Cleaning service</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="requirements">
+                    <hr class="border-line">
+                    <div class="container">
+                        <h2 class="form-title">Requirements</h2>
+                        <dl class="form-row as-line">
+                            <dt class="name">Students only</dt>
+                            <dd class="desc">
+                                <div class="element radio">
+                                    <input type="radio" id="students-yes" name="students" value="Yes">
+                                    <label for="students-yes">Yes</label>
+                                </div>
+                                <div class="element radio">
+                                    <input type="radio" id="students-no" name="students" value="No" checked>
+                                    <label for="students-no">No</label>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-row as-line">
+                            <dt class="name">Renter's pets are allowed</dt>
+                            <dd class="desc">
+                                <div class="element radio">
+                                    <input type="radio" id="renters-yes" name="renters" value="Yes">
+                                    <label for="renters-yes">Yes</label>
+                                </div>
+                                <div class="element radio">
+                                    <input type="radio" id="renters-no" name="renters" value="No" checked>
+                                    <label for="renters-no">No</label>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-row as-line">
+                            <dt class="name">Pets live in the house</dt>
+                            <dd class="desc">
+                                <div class="element radio">
+                                    <input type="radio" id="pets-yes" name="pets" value="Yes">
+                                    <label for="pets-yes">Yes</label>
+                                </div>
+                                <div class="element radio">
+                                    <input type="radio" id="pets-no" name="pets" value="No" checked>
+                                    <label for="pets-no">No</label>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="form-row as-line">
+                            <dt class="name">Smoking</dt>
+                            <dd class="desc">
+                                <div class="element radio">
+                                    <input type="radio" id="smoking-yes" name="smoking" value="Yes">
+                                    <label for="smoking-yes">Yes</label>
+                                </div>
+                                <div class="element radio">
+                                    <input type="radio" id="smoking-no" name="smoking" value="No" checked>
+                                    <label for="smoking-no">No</label>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div> 
+                </div>
+                <div class="description">
+                    <hr class="border-line">
+                    <div class="container">
+                        <h2 class="form-title">Description</h2>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when 
+                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                            of letters, as opposed to using ‘Content here, content here’, making it look like readable English.
+                            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
+                            and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have 
+                            evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        </p>
+                    </div>
+                </div>
+                <div class="similar">
+                    <hr class="border-line">
+                    <div class="container">
+                        <h2 class="form-title">Similar listings</h2>
+                        <div class="items">
+                            <div class="item-card">
+                                <a href="#">
+                                    <img class="item-images" src="/templates/default/images/profile-item.png" alt="">
+                                </a>
+                                <div class="decription">
+                                    <a href="#" class="title">Комната в Скарбо</a>
+                                    <div class="price">800 cad per month</div>
+                                    <div class="about">
+                                        <div class="city">Торонто</div>
+                                        <div class="time">Сегодня в 01:00 р.m.</div>
+                                    </div>      
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <a href="#">
+                                    <img class="item-images" src="/templates/default/images/profile-item.png" alt="">
+                                </a>
+                                <div class="decription">
+                                    <a href="#" class="title">Комната в Скарбо</a>
+                                    <div class="price">800 cad per month</div>
+                                    <div class="about">
+                                        <div class="city">Торонто</div>
+                                        <div class="time">Сегодня в 01:00 р.m.</div>
+                                    </div>      
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <a href="#">
+                                    <img class="item-images" src="/templates/default/images/profile-item.png" alt="">
+                                </a>
+                                <div class="decription">
+                                    <a href="#" class="title">Комната в Скарбо</a>
+                                    <div class="price">800 cad per month</div>
+                                    <div class="about">
+                                        <div class="city">Торонто</div>
+                                        <div class="time">Сегодня в 01:00 р.m.</div>
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button" href="#">Go to list</a>    
+                    </div>
+                </div>         
+           </div>
+        </div>
+    </section>
+    <footer class="footer">
+		<div class="footer-container">
+            <div class="footer-contacts">
+                <a href="#" class="footer-logo">ForYouToo</a>
+                <a href="#" class="footer-contact contact-link">Contact Us</a>
+                <a href="#" class=" footer-contact about-link">About Us</a>
+            </div>
+			<div class="footer-links">
+                <a href="#" class="footer-link fas fa-phone-alt">647-363-7887</a>
+                <a href="#" class="footer-link fas fa-envelope">foryoutoo@gmail.com</a>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-copy">
+            2020 ForYouToo
+        </div>
+	</footer>
+</body>
+
+</html>
